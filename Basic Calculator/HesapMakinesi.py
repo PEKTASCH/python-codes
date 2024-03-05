@@ -39,11 +39,11 @@ while True:
             sayi2 = int(input("2. Sayiyi Giriniz: "))
             print("{}  /   {}    =  {:.2f}".format(sayi1, sayi2, sayi1/sayi2))
         
-        except ZeroDivisionError:
-            print("Bir sayiyi 0'a bölemezsiniz!")
+        except ZeroDivisionError:               # Bölme işleminde kullanıcı paydaya 0 yazarsa hata olmasını sağlamak için exception(istisna) üretmesine yol açmalıyım.
+            print("Bir sayiyi 0'a bölemezsiniz!")  
         
         except ValueError:
-            print("Lütfen sadece sayı girin!")
+            print("Lütfen sadece sayı girin!")  # int türünde olmayan bir DEĞERİ girerse de hata almalı 
     
     else:
         print("Geçersiz Seçenek...")
