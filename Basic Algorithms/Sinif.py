@@ -8,7 +8,7 @@ class Example:
         
     def add(self):
         
-        return self.a + self.b
+        return self.a + self.b       
     
 e = Example(8,6)
 
